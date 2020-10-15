@@ -1,0 +1,131 @@
+body{
+  color:#000000;
+  font-family:"Andika", sans-serif;
+  font-size:16px;
+  margin: 1.2em;
+  background-image: url("../images/pigeon-background.jpg"); 
+  background-color:#DDDDDD
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+main{
+  margin-bottom: 100px;
+}
+
+h1{
+  color: #8000FF;
+  font-size: 2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+caption{
+  margin:5px 0px;
+}
+
+p{
+  color:#000000;
+  font-size:16px;
+  padding-top:10px;
+}
+
+a{
+  font-size:16px;
+  color:#C12258; /*#B21F50, #B92751*/
+  text-decoration-style:wavy; /*text-decoration: underline wavy*/
+}
+
+/*table{
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius:15px;
+  border-spacing:0;
+  border-collapse:collapse;
+}*/
+
+table {
+    margin: 0 /*no margin on top/bottom*/ auto /*center left/right*/;
+    border-collapse:separate;
+    border:2px solid black;
+    border-radius:15px;
+}
+
+tr {
+    border-left:2px solid black;
+    border-top:2px solid black;
+    /*transition: background-color 1s ease*;/ /*transitions elements...e.g. eases color change gradually*/
+    /*-webkit-transition: background-color 1s ease;*/ /*standardizes element across different browsers*/
+}
+
+.colhead{
+  background-color: #7e0820;
+  text-align:center; 
+  text-transform:uppercase;
+  color: #FFFFFF;
+  min-width: 100px;
+  padding:10px;
+}
+
+.rowhead{
+  border-top: 2px solid black;
+}
+
+tr:last-child .rowhead{
+  border-bottom-left-radius: 15px;
+  border-color: #000000;
+}
+
+td{
+  text-align:center;
+  border-top:2px solid black;
+  padding: 15px;
+}
+
+*:focus{
+  border-color:#000000;
+  border-width:2px;
+}
+
+tr:nth-child(odd){
+  background-color:#D1D1D1;
+}
+
+tr:nth-child(even){
+  background-color:#FFFFFF00 /*transparent*/;
+}
+
+tr:hover{
+  font-color:#000000;
+  background-color:rgb(126,8,32,0.5);
+}
+
+/* FOR ROUNDED CORNERS - think about each corner's position on the table, and address those locations*/
+
+thead tr:first-child th:first-child {
+  border-top-left-radius: 15px;
+}
+
+thead tr:first-child th:last-child {
+  border-top-right-radius: 15px;
+}
+
+thead tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+
+thead tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+footer p {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  min-height:60px;
+  background:#000000;
+  text-align:center;
+  color:#FFFFFF;
+}
